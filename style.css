@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --main-color: ;
+	--text-color: rgb(34, 34, 34);
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+*{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f3f3f3 !important;
+}
+
+section{
+	scroll-margin:30px;
+}
+
+nav{
+	position: sticky;
+	top: 0;
+}
+
+.hero_text{
+    font-size: clamp(2rem, 4.6438vw + .7172rem, 4.2rem);
+    font-weight: 900;
+	font-family: "Raleway", serif;
+	font-optical-sizing: auto;
+	font-weight: 800
+	font-style: normal;
+}
+
+.hero_catch{
+    font-size: clamp(1.5rem, 1.5831vw + 1.0627rem, 2.25rem);
+    font-weight: 600;
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+
+.logo{
+    font-family: "Major Mono Display", serif;
+  	font-weight: 900;
+  	font-style: normal;
+    color: #000000;
+    font-size: clamp(1.8rem, .9499vw + 1.5376rem, 3.3rem);
+	text-decoration: none !important;
+}
+
+.nav_link{
+	text-decoration: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-color: #fff;
+	transition: 0.2s;
+}
+
+.nav_link:hover{
+	color: #000000 !important;
+	border-color: #000000;
+	padding: 7px 0 !important;
+}
+
+.nav_link.active_link{
+	color: #000000 !important;
+}
+
+.dets {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
