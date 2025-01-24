@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+
 :root{
     --main-color: ;
 	--text-color: rgb(34, 34, 34);
@@ -22,11 +25,20 @@ html{
 }
 
 body{
-    background: #f3f3f3 !important;
+    background: #f2f2f2 !important;
 }
 
 section{
-	scroll-margin:30px;
+	scroll-margin:60px;
+}
+
+.section_head{
+	font-family: "Cormorant", serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+	letter-spacing: 0;
+	border-color:#ccc !important;
 }
 
 nav{
