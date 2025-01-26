@@ -8,6 +8,7 @@
 	<link rel="icon" href="img/icon.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="3d-slide.css">
+    <link rel="stylesheet" href="imgsl.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -26,7 +27,7 @@
 	            <ul class="d-flex align-items-center mt-3">
 	                <li><a href="#overview" class="text-secondary py-1 mx-2 nav_link active_link">Overview</a></li>
 	                <li><a href="#intro" class="text-secondary py-1 mx-2  nav_link">Intro</a></li>
-	                <li><a href="#" class="text-secondary py-1 mx-2  nav_link">Gallery</a></li>
+	                <li><a href="#gallery" class="text-secondary py-1 mx-2  nav_link">Gallery</a></li>
 	                <li><a href="#" class="text-secondary py-1 mx-2  nav_link">About</a></li>
 	                <li><a href="#message" class="text-secondary py-1 mx-2  nav_link">Message</a></li>
 	            </ul>
@@ -72,6 +73,42 @@
 			</div>
 	</section>
 	
+	<section id="gallery" class="px-lg-5 px-lg-5 px-md-4 px-3 mt-5 mx-xl-5 mx-lg-5 mx-0 mb-4">
+		<p class="py-2 border-bottom border-1 border-secondary h1 fw-bold text-primary section_head">Gallery</p>
+		<div class="wrap-out mt-3">
+			<div class="wrapper">
+		      <i id="left" class="fa-solid fa-angle-left"></i>
+		      <ul class="carousel">
+		        <li class="cardd">
+		          <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+		          <h2>Blanche Pearson</h2>
+		        </li>
+		        <li class="cardd">
+		          <div class="img"><img src="images/img-2.jpg" alt="img" draggable="false"></div>
+		          <h2>Joenas Brauers</h2>
+		        </li>
+		        <li class="cardd">
+		          <div class="img"><img src="images/img-3.jpg" alt="img" draggable="false"></div>
+		          <h2>Lariach French</h2>
+		        </li>
+		        <li class="cardd">
+		          <div class="img"><img src="images/img-4.jpg" alt="img" draggable="false"></div>
+		          <h2>James Khosravi</h2>
+		        </li>
+		        <li class="cardd">
+		          <div class="img"><img src="images/img-5.jpg" alt="img" draggable="false"></div>
+		          <h2>Kristina Zasiadko</h2>
+		        </li>
+		        <li class="cardd">
+		          <div class="img"><img src="images/img-6.jpg" alt="img" draggable="false"></div>
+		          <h2>Donald Horton</h2>
+		        </li>
+		      </ul>
+		      <i id="right" class="fa-solid fa-angle-right"></i>
+		    </div>
+		</div>
+	</section>
+	
 	<section id="message" class="px-lg-5 px-lg-5 px-md-4 px-3 mt-5 mx-xl-5 mx-lg-5 mx-0 mb-4">
 		<p class="py-2 border-bottom border-1 border-secondary h1 fw-bold text-primary section_head">Leave a message</p>
 		<form method="post" action="https://formspree.io/f/mwpvpvay">
@@ -89,7 +126,12 @@
 			<input type="submit" value="Submit" class="btn btn-outline-primary mt-2 px-4 py-2 rounded-2"/>
 		</form>
 	</section>
+
+	<footer class="w-100 d-flex justify-content-center border-top border-secondary border-1 py-1">
+		<p class="m-0">Copyright 2025 © <a href="https://ayreact-portfolio.onrender.com" class="link link-underline link-underline-opacity-0" target="_blank">AY_REACT</a> | All Rights Reserved.</p>
+	</footer>
 	
 	<script src="data.js" async></script>
+	<script src="data2.js" async></script>
 </body>
 </html>
