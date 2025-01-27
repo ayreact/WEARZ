@@ -25,7 +25,7 @@ html{
 }
 
 body{
-    background: #f2f2f2 !important;
+    background: #222529 !important;
 }
 
 section{
@@ -41,10 +41,16 @@ section{
 	border-color:#ccc !important;
 }
 
+figure {
+  margin: 0 0 1rem;
+}
+
 nav{
 	position: sticky;
 	top: 0;
 	z-index: 9999;
+	background: #222529;
+	border-bottom: 1px solid #171717;
 }
 
 .hero_text{
@@ -62,38 +68,46 @@ nav{
     font-family: "Playwrite IN", serif;
     font-optical-sizing: auto;
     font-style: italic;
+	color: #fff;
 }
 
 .logo{
     font-family: "Major Mono Display", serif;
   	font-weight: 900;
   	font-style: normal;
-    color: #000000;
+    color: #fff;
     font-size: clamp(1.8rem, .9499vw + 1.5376rem, 3.3rem);
 	text-decoration: none !important;
 }
 
 .nav_link{
 	text-decoration: none;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	border-color: #fff;
+	border-top: 1px solid #222529;
+	border-bottom: 1px solid #222529;
 	transition: 0.2s;
 }
 
 .nav_link:hover{
-	color: #000000 !important;
-	border-color: #000000;
+	color: #fff !important;
+	border-color: #fff;
 	padding: 7px 0 !important;
 }
 
 .nav_link.active_link{
-	color: #000000 !important;
+	color: #fff !important;
 }
 
 .dets {
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+  	font-family: "Montserrat", serif;
+  	font-optical-sizing: auto;
+  	font-weight: 300;
+  	font-style: normal;
+	color: #fff;
+}
+
+.intro-img{
+	border: 2px solid #171717;
+	box-shadow: 133px 38px 230px 0px rgba(255,255,255,0.75);
+-webkit-box-shadow: 133px 38px 230px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: 133px 38px 230px 0px rgba(255,255,255,0.75);
 }

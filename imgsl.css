@@ -7,9 +7,10 @@
   max-width: 1400px;
   width: 100%;
   position: relative;
+	overflow: hidden;
 }
 .wrapper i {
-  top: 50%;
+  top: 42%;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -17,22 +18,34 @@
   position: absolute;
   text-align: center;
   line-height: 50px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  transform: translateY(-50%);
   transition: transform 0.1s linear;
-	z-index: 99;
+  z-index: 99;
 }
 .wrapper i:active{
   transform: translateY(-50%) scale(0.85);
 }
+
 .wrapper i:first-child{
-  left: -22px;
+  	left: 10px;
+	transform: translateX(-120%);
 }
+
 .wrapper i:last-child{
-  right: -22px;
+  	right: 10px;
+	transform: translateX(120%);
 }
+
+.wrapper:hover i{
+	transform: translateX(0);
+}
+
 .wrapper .carousel{
   display: grid;
   grid-auto-flow: column;
@@ -68,7 +81,6 @@
   height: 342px;
   list-style: none;
   background: #fff;
-  cursor: pointer;
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
@@ -88,10 +100,6 @@
 	color: #fff;
 	position: absolute;
 	bottom: 15px;
-}
-.carousel .cardd span {
-  color: #6A6D78;
-  font-size: 1.31rem;
 }
 
 @media screen and (max-width: 900px) {
