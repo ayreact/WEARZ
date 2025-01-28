@@ -1,4 +1,6 @@
-// Select all elements with the class name 'nav_link'
+const menubtn = document.querySelector('.menubtn');
+const closebtn = document.querySelector('.closebtn');
+const nav_small = document.querySelector('.nav-small');
 const navLinks = document.querySelectorAll('.nav_link');
 const sections = document.querySelectorAll('section');
 
@@ -43,3 +45,19 @@ function updateActiveLink() {
 
 // Listen to the scroll event and update the active link
 window.addEventListener('scroll', updateActiveLink);
+
+//Small screen navbar toggle system
+function openNav(event) {
+	nav_small.classList.add("nav-small-open");
+	menubtn.style.visibility = "hidden"
+	closebtn.style.visibility = "visible"
+}
+
+function closeNav(event) {
+	nav_small.classList.remove("nav-small-open");
+	menubtn.style.visibility = "visible"
+	closebtn.style.visibility = "hidden"
+}
+
+menubtn.addEventListener("click", openNav);
+closebtn.addEventListener("click", closeNav);
